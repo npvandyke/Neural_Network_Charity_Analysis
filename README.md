@@ -46,13 +46,15 @@ As the model performance was still below 75% accuracy, I made a third and final 
 
 ## Summary: 
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation (Random Forest; less risk of overfitting, ability to rank feature importance). 
-
 Over four total training attempts, the deep learning model's accuracy increased from ___% to ____%, but did not exceed the 75% accuracy threshold. One potential issue could be an over fixation on unimportant features. An alternative recommendation could be to rank feature importance using a random forest classification model, and drop some of the least important features before retraining either the sequential model or random forest model. While the deep learning model may be slightly more adept for identifying variability in the data, the random forest model is less prone to overfitting and less computationally expensive, and therefore may be preferable in this situation. 
 
-| Training Attempt #1 | Training Attempt #2 | Training Attempt #3 | Training Attempt #4 
+| Training Attempt #1 | Training Attempt #2 | 
 :-------------------------:|:-------------------------:
-![Model1_Loss and Accuracy](Images/nn_model_loss_accuracy.png) | ![Classification Density Plot](Images/Classification_DensityPlot.png)
+![Model1_Loss and Accuracy](Images/nn_model_loss_accuracy.png) | ![]()
+
+| Training Attempt #3 | Training Attempt #4 |
+:-----------------:|:-----------------------:
+![]() | ![]()
 
 
 For questions or more information contact me through my [LinkedIn](https://www.linkedin.com/in/natalie-vandyke-ba963837/)
