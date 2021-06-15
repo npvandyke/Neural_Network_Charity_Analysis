@@ -32,13 +32,19 @@ For the first attempt at training the deep neural network model, I started with 
 
 A Relu activation function was used for the two hidden layers, since its very possible that the given features have a nonlinear relationship with the target outcome. A Sigmoid activation function for the output layer as we are searching for a binary classification outcome. The model was trained for 100 epochs.
 
+<b>Model Summary:</b>
+
 ![Model Summary](Images/nn_model_summary.png)
 
 In order to increase model performance, I added additional neurons to the hidden layers, increasing the first hidden layer up from 8 to 54 neurons and the second hidden layer up from 5 to 32 neurons, for a total of 86 neurons. I increased to this number as it is double the number of inputs. 
 
+<b>Model Summary:</b>
+
 ![Model2_Summary](Images/nn_model2_summary.png)
 
 Since model performance was still below 75% accuracy, I further increased the number of neurons from 86 to 125, representing three times the number of inputs. I also added an additional hidden layer to the model.
+
+<b>Model Summary:</b>
 
 ![Model3_Summary](Images/nn_model3_summary.png)
 
@@ -46,7 +52,7 @@ As the model performance was still below 75% accuracy, I made a third and final 
 
 ## Summary: 
 
-Over four total training attempts, the deep learning model's accuracy increased from ___% to ____%, but did not exceed the 75% accuracy threshold. One potential issue could be an over fixation on unimportant features. An alternative recommendation could be to rank feature importance using a random forest classification model, and drop some of the least important features before retraining either the sequential model or random forest model. While the deep learning model may be slightly more adept for identifying variability in the data, the random forest model is less prone to overfitting and less computationally expensive, and therefore may be preferable in this situation. 
+Over four total training attempts, the deep learning model's accuracy increased from 72.50% to 72.61%, but did not exceed the 75% accuracy threshold. One potential issue could be an over fixation on unimportant features. An alternative recommendation could be to rank feature importance using a random forest classification model, and drop some of the least important features before retraining either the deep learning model or the random forest model. While the deep learning model may be slightly more adept for identifying variability in the data, the random forest model is less prone to overfitting and less computationally expensive, and therefore may be preferable in this situation. 
 
 | Training Attempt #1 | Training Attempt #2 | 
 :-------------------------:|:-------------------------:
