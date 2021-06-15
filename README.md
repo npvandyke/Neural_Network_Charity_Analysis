@@ -50,11 +50,11 @@ Over four total training attempts, the deep learning model's accuracy increased 
 
 | Training Attempt #1 | Training Attempt #2 | 
 :-------------------------:|:-------------------------:
-![Model1_Loss and Accuracy](Images/nn_model_loss_accuracy.png) | ![]()
+![Model1_Loss and Accuracy](Images/nn_model_loss_accuracy.png) | ![Model2 Loss and Accuracy](Images/nn_model2_loss_accuracy.png)
 
 | Training Attempt #3 | Training Attempt #4 |
 :-----------------:|:-----------------------:
-![]() | ![]()
+![Model3_Loss and Accuracy](Images/nn_model3_loss_accuracy.png) | ![Model4 Loss and Accuracy](Images/nn_model4_loss_accuracy.png)
 
 
 For questions or more information contact me through my [LinkedIn](https://www.linkedin.com/in/natalie-vandyke-ba963837/)
