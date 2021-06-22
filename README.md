@@ -2,7 +2,7 @@
 
 ## Overview of the analysis:
 
-Training a sequential deep neural network model from the Keras library with TensorFLow on a [dataset](charity_data.csv) (charity_data.csv) to predict binary outcomes (with at least 75% accuracy) of whether or not charities used their donated money effectively. The successfully trained model can be used by foundations to help vet potential donation recipients in order to ensure that their donatons are going where they are most impactful. 
+Training a sequential deep neural network model from the Keras library with TensorFLow on a [charity dataset](charity_data.csv) to predict binary outcomes (with at least 75% accuracy) of whether or not charities used their donated money effectively. The successfully trained model can be used by foundations to help vet potential donation recipients in order to ensure that their donatons are going where they are most impactful. 
 
 ## Results: 
 
@@ -12,17 +12,17 @@ Training a sequential deep neural network model from the Keras library with Tens
 
 ![Column_Names](Images/column_names.png)
 
-- The image above displays all of the columns present in the [dataset](charity_data.csv) that was used to train the deep learning neural network. The column <b>"Is_Successful"</b> (was the money used effectively?) is used as the <b>target</b> for the model, since that is the outcome we are aiming to predict as a method of vetting potential donation recipients.  
+- The image above displays all of the columns present in the [charity dataset](charity_data.csv) that was used to train the deep learning neural network. The column <b>"Is_Successful"</b> is used as the target for the model, since that is the outcome we are aiming to predict as a method of vetting potential donation recipients.  
 
-- The remaining columns ("APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS" and "ASK_AMT") can be considered as potential <b>features</b> (independent variables) for the model. The columns <b>"EIN" and "NAME"</b> were <b>removed</b> as potential features as they simply contain identification information and should not have a causal relationship to the target variable. 
+- The remaining columns are to be considered as features for the model. The columns <b>"EIN"</b> and <b>"NAME"</b> were removed as potential features, as they simply contain identification information and should not have a causal relationship to the target variable. 
 
-- Two of the <b> categorical </b> columns ("APPLICATION_TYPE" and "CLASSIFICATION") contained more than 10 unique values and were further examined to determine whether any of those values occured infrequently enough to warrant binning. Below are the density plots of the unique value frequencies for the two categorical columns. 
+- Two of the categorical columns (<b>"APPLICATION_TYPE"</b> and <b>"CLASSIFICATION"</b>) contained more than 10 unique values and were further examined to determine whether any of those values occured infrequently enough to warrant binning. Below are the density plots of the unique value frequencies for the two categorical columns. 
 
 | APPLICATION_TYPE | CLASSIFICATION |
 :-------------------------:|:-------------------------:
 ![Application Type Density Plot](Images/ApplicationType_DensityPlot.png) | ![Classification Density Plot](Images/Classification_DensityPlot.png)
 
-- From the density plots, I determined to bin any unique value that occurred less frequently than 500 times under "APPLICATION_TYPE" or 1800 times under "CLASSIFICATION". 
+- From the density plots, I determined to bin any unique value that occurred less frequently than 500 times under <b>"APPLICATION_TYPE"</b> or 1800 times under <b>"CLASSIFICATION".</b> 
 
 - The categorical data was then transformed to numerical data, and all values were scaled before being fitted to the model. 
 
@@ -30,13 +30,13 @@ Training a sequential deep neural network model from the Keras library with Tens
 
 For the first attempt at training the deep neural network model, I started with two hidden layers in addition to the input and output layer, with the intention of adding more hidden layers as necessary depending on model performance.
 
-A Relu activation function was used for the two hidden layers, since its very possible that the given features have a nonlinear relationship with the target outcome. A Sigmoid activation function for the output layer as we are searching for a binary classification outcome. The model was trained for 100 epochs.
+A Relu activation function was used for the two hidden layers, since its very possible that the given features have a nonlinear relationship with the target outcome. A Sigmoid activation function was used for the output layer as we are searching for a binary classification outcome. The model was trained for 100 epochs.
 
 <b>Model Summary:</b>
 
 ![Model Summary](Images/nn_model_summary.png)
 
-In order to increase model performance, I added additional neurons to the hidden layers, increasing the first hidden layer up from 8 to 54 neurons and the second hidden layer up from 5 to 32 neurons, for a total of 86 neurons. I increased to this number as it is double the number of inputs. 
+In order to increase model performance, I added additional neurons to the hidden layers, increasing the first hidden layer up from 8 to 54 neurons, and the second hidden layer up from 5 to 32 neurons, for a total of 86 neurons. 
 
 <b>Model Summary:</b>
 
@@ -63,4 +63,4 @@ Over four total training attempts, the deep learning model's accuracy increased 
 ![Model3_Loss and Accuracy](Images/nn_model3_loss_accuracy.png) | ![Model4 Loss and Accuracy](Images/nn_model4_loss_accuracy.png)
 
 
-For questions or more information contact me through my [LinkedIn](https://www.linkedin.com/in/natalie-vandyke-ba963837/)
+Questions? Comments? [Let's Connect!](https://www.linkedin.com/in/natalie-vandyke-npv/) ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
