@@ -1,5 +1,5 @@
+![](Images/banner.png)
 # Neural Network Charity Analysis
-
 ## Overview of the analysis:
 
 Training a sequential deep neural network model from the Keras library with TensorFLow on a [charity dataset](charity_data.csv) to predict binary outcomes (with at least 75% accuracy) of whether or not charities used their donated money effectively. The successfully trained model can be used by foundations to help vet potential donation recipients in order to ensure that their donatons are going where they are most impactful. 
