@@ -9,8 +9,8 @@ Training a sequential deep neural network model from the Keras library with Tens
 ### Data Preprocessing
 
 <b> Column names from the charity_data.csv dataset: </b>
-
-![Column_Names](Images/column_names.png)
+:-----------------:
+![Column_Names](Images/columns.png)
 
 - The image above displays all of the columns present in the [charity dataset](charity_data.csv) that was used to train the deep learning neural network. The column <b>"Is_Successful"</b> is used as the target for the model, since that is the outcome we are aiming to predict as a method of vetting potential donation recipients.  
 
